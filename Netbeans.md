@@ -5,7 +5,7 @@ It is similar to Eclipse, but has better suggestion and tool support for PHP dev
 ## NetBeans IDE Setup
 
 ### Downloading
-NetBeans should be downloaded from [here](http://www.oracle.com/technetwork/articles/javase/jdk-netbeans-jsp-142931.html), which links to the JDK from Oracle with NetBeans Bundled.
+NetBeans should be downloaded from [http://www.oracle.com/technetwork/articles/javase/jdk-netbeans-jsp-142931.html](http://www.oracle.com/technetwork/articles/javase/jdk-netbeans-jsp-142931.html), which links to the JDK from Oracle with NetBeans Bundled.
 The download from netbeans.org does not install properly, and requires users to run NetBeans as an administrator enter an administrator password every time NetBeans is opened.
 
 **Note:** installing NetBeans requires administrator privileges.
@@ -28,7 +28,7 @@ After restarting NetBeans, you will be able to create and open PHP projects.
 
 In the top menu, click `Team -> Subversion -> Checkout`.
 
-![checkout-menu](images/checkout-menu.png)
+![Checking out a subversion project in NetBeans](images/checkout-menu.png)
 
 In the dialogue that appears, fill in *Repository URL* with the URL to the correct subversion repository:
 
@@ -43,7 +43,7 @@ Otherwise contact your supervisor for that information.
 
 Check the *Save Username and Password* check box and then click *Next >*.
 
-![Checkout dialogue](images/checkout.png)
+![NetBeans subversion repository window](images/checkout.png)
 
 #### Step 2: Folders to Checkout
 
@@ -54,19 +54,19 @@ Make sure the *Scan for NetBeans Projects after Checkout* box is checked.
 Pressing *Finish* will start downloading the project. 
 This could take a few minutes depending on the site.
 
-![Folders to Checkout Window](images/repository.png)
+![Choosing folders to check out](images/repository.png)
 
 ### Setting up a Checked Out PHP Project
 
 When the project has been successfully checked out, the following window will appear, click *Create Project...*.
 
-![checkout-completed](images/checkout-completed.png)
+![NetBeans checkout completed window](images/checkout-completed.png)
 
 #### Step 1: Choose Project
 
 In the initial window, select `PHP -> PHP Application from Remote Server` and then click *Next >*.
 
-![choose-project](images/choose-project.png)
+![Choosing a PHP project in NetBeans](images/choose-project.png)
 
 #### Step 2: Name and Location
 
@@ -79,7 +79,7 @@ Fill out the *Name and Location* window with the following information:
 | PHP Version     |  Used for PHP code hints, the Climate and Water sites use PHP v5.5 |
 | Default Encoding | Set this to UTF-8 (default)                           |
 
-![Name and Location](images/name-and-location.png)
+![Choosing a name and location for the project](images/name-and-location.png)
 
 Then click *Next >*.
 
@@ -88,14 +88,14 @@ Then click *Next >*.
 The remote connection dialogue sets up a remote connection to the deployment server. 
 When changes are made locally, those changes will automatically be uploaded to the specified server. 
 
-![remote connection setup](images/remote-connection.png) 
+![Setting up a remote connection for the project](images/remote-connection.png) 
 
 If it is your first time adding a project, you must also set up a remote connection. 
 Click the *Manage...* button to open the *Manage Remote Connections* window.
 In the *Manage Remote Connections* window, click *Add...* to create a new remote connection. 
 Provide a name and set the connection type to *STP *.
 
-![create new remote connection](images/create-new-connection.png)
+![Creating a new remote connection in NetBeans](images/create-new-connection.png)
 
 After clicking *OK*, fill out the remote connection info with the following:
 
@@ -114,11 +114,11 @@ After clicking *OK*, fill out the remote connection info with the following:
 A known hosts file is just a simple text document that stores RSA fingerprints of servers.
 Just make an empty text document on your computer and open it by clicking on *Browse...* beside the *Known Hosts File* field.
 
-![manage remote connections](images/manage-remote-connections.png)
+![Managing remote connections](images/manage-remote-connections.png)
 
 After filling out an initial connection, click on the *Test Connection* button to test your newly created connection.
 
-![connection succeeeded dialogue](images/connection-succeeded.png)
+![Connection succeeeded dialogue](images/connection-succeeded.png)
 
 After clicking *OK* and returning to the remote connection window, fill out the Project URL with the appropriate URL from the table below.
 The Upload Directory should be left blank if the *Initial Directory* was set using the information from the table above.
@@ -139,7 +139,7 @@ Click *Next >*.
 The last step is confirming you have set up your remote connection properly. 
 If the window looks similar to the one below, then you should be good to go.
 
-![confirmation window](images/confirmation.png)
+![Project creation confirmation window](images/confirmation.png)
 
 Make sure to uncheck *Check All*, and check only one arbitrary file.
 NetBeans makes it mandatory to download something, and you shouldn't download everything because that would include the working files of other teamates.
@@ -162,7 +162,7 @@ Navigate to `Tools -> Options -> HTML/JS -> CSS Preprocessors` from the menubar,
 If this does not work, you will have to manually find where your *sass.bat* file is located. 
 It would be located in the bin directory in the directory you set in *RubyInstaller*.
 
-![Sass Options Window](images/sass-options.png)
+![Sass options window in NetBeans options](images/sass-options.png)
 
 After installing setting up Ruby and Sass in NetBeans, open up a project's settings by right clicking on the Project name in the sidebar and select *Properties*.
 
@@ -172,7 +172,7 @@ Navigate to *CSS Preprocessors* and check the *Compile Sass Files on Save* box.
 Add as many input and output directories for scss and css files as necessary.
 Adding the following compiler flags: `--sourcemap=none --style compressed`, will disable source map generation and have the outputted css be compressed.
 
-![Project CSS Preprocessors](images/css-preprocessors.png)
+![Setting a project's CSS Preprocessors](images/css-preprocessors.png)
 
 #### PHPUnit
 
@@ -183,7 +183,7 @@ PHPUnit is the de factor standard for unit testing in PHP. Setting up PHPUnit in
 PHP for Windows can be installed from [http://windows.php.net/download/](http://windows.php.net/download/).
 Currently, the projects are using PHP 5, so you should download the latest version of the Non Thread Save PHP 5. 
 
-![PHP 5 Download](images/php-v5.png)
+![PHP 5 Non Thread Safe download screenshot](images/php-v5.png)
 
 Download the Zip file and extract it anywhere you'd like, ex. `C:/PHP/`. 
 
@@ -192,13 +192,13 @@ Download the Zip file and extract it anywhere you'd like, ex. `C:/PHP/`.
 After unzipping the PHP download to a directory on your computer, in NetBeans navigate to `Tools -> Options -> PHP -> General`.
 In the PHP General options, click on the *Browse...* button and open up the *php.exe* executable wherever you unzipped PHP to.
 
-![PHP NetBeans Options](images/php-netbeans.png)
+![Setting the php interpreter in NetBeans options](images/php-netbeans.png)
 
 ##### Step 3: Downloading PHPUnit
 
 After PHP is installed, navigate to [https://phpunit.de/](https://phpunit.de/) and download the current stable release.
 
-![Latest Stable PHPUnit Release](images/phpunit-stable.png)
+![Latest stable PHPUnit release screenshot](images/phpunit-stable.png)
 
 Download that and place it somewhere on your computer, example, in `C:/bin/`
 
@@ -207,7 +207,7 @@ Download that and place it somewhere on your computer, example, in `C:/bin/`
 After you've downloaded the phpunit\*.phar file, open up `Tools -> Options -> PHP -> Frameworks & Tools`.
 In the options window, click on the *Browse...* button beside *PHPUnit Script*, and navigate and find that .phar file.
 
-![Configuring PHPUnit in NetBeans](images/phpunit-netbeans.png)
+![Setting PHPUnit location in NetBeans options](images/phpunit-netbeans.png)
 
 ##### Step 5: Configuring PHPUnit for Projects
 
@@ -235,7 +235,7 @@ By default NetBeans does not automatically lock files when you try to edit them.
 It also does not show you when files are locked. 
 You can change this by navigating to `Tools -> Options -> Team -> Versioning -> Subversion` from the menu bar, and changing the options highlighted in the screenshot below.
 
-![subversion options](images/svn-options.png)
+![Subversion options in NetBeans options](images/svn-options.png)
 
 ### Dark Look and Feel
 
@@ -252,4 +252,4 @@ If nothing shows up, click on the *Check for Newest* button and try searching fo
 **Note:** Installing jVi overwrites your Editor settings: indentation, code formatting rules etc. 
 You must set those manually in the jVi Config in NetBeans Options (`Tools -> Options`).
 
-![jVi Configuration](images/jvi-config.png)
+![jVi Configuration in NetBeans options](images/jvi-config.png)
